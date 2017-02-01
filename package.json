@@ -1,0 +1,12 @@
+{
+  "name": "carlosrm-fotografia",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:kuroikyu/carlosrm-fotografia.git",
+  "author": "Kuroi Kyu <kuroikyu@users.noreply.github.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "normalize.css": "^5.0.0"
+  }
+}

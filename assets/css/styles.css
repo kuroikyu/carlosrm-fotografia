@@ -1,0 +1,158 @@
+/* --------------------------------------------------------------------------
+   Variables
+   -------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------
+   Global Styles / Helper Classes
+   -------------------------------------------------------------------------- */
+* {
+  box-sizing: border-box; }
+
+.clearfix::before, .clearfix::after {
+  content: '';
+  display: table; }
+
+.clearfix::after {
+  clear: both; }
+
+::-moz-selection {
+  text-shadow: none;
+  background: #fff; }
+
+::selection {
+  text-shadow: none;
+  background: #fff; }
+
+/* --------------------------------------------------------------------------
+   Styles
+   -------------------------------------------------------------------------- */
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #111;
+  color: #fff;
+  font-family: "Dosis", sans-serif; }
+  body .image, body .alt-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/photo/_SMG0261.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+    opacity: .7;
+    transition: opacity 300ms ease-in-out; }
+  body .alt-image {
+    opacity: .7;
+    background-image: url("../img/photo/_SMG8443.jpg"); }
+  @media screen and (max-width: 700px) {
+    body {
+      font-size: 14px; } }
+  @media screen and (max-width: 500px) {
+    body {
+      font-size: 12px; } }
+  @media screen and (max-width: 400px) {
+    body {
+      font-size: 10px; } }
+  @media screen and (max-width: 350px) {
+    body {
+      font-size: 8px; } }
+  @media screen and (max-height: 350px) {
+    body {
+      font-size: 8px; } }
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 47%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 2em;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-content: space-between;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  height: 57vh;
+  max-height: 615px; }
+  @media screen and (max-height: 800px) {
+    .container {
+      height: 70vh; } }
+  @media screen and (max-height: 700px) {
+    .container {
+      height: 85vh; } }
+  @media screen and (max-height: 350px) {
+    .container {
+      height: 90vh; } }
+
+h1, main, .button {
+  width: 100%; }
+
+/* --------------------------------------------------------------------------
+   Header
+   -------------------------------------------------------------------------- */
+h1 {
+  margin: 0; }
+  h1 span {
+    display: block; }
+  h1 .primary {
+    font-size: 3.8em;
+    font-weight: 400; }
+  h1 .secondary {
+    font-size: 1.7em;
+    font-weight: 300;
+    margin-top: -.25em; }
+
+/* --------------------------------------------------------------------------
+   Main
+   -------------------------------------------------------------------------- */
+.social {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: space-around;
+  -ms-flex-line-pack: distribute;
+  align-content: space-around;
+  width: 70%;
+  max-width: 400px;
+  margin: 0 auto;
+  font-size: 4em;
+  list-style: none;
+  padding: 0; }
+  .social li {
+    width: 100%; }
+
+/* --------------------------------------------------------------------------
+   Button
+   -------------------------------------------------------------------------- */
+.button a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
+  padding: .75em 1.5em;
+  border: 3px solid white;
+  border-radius: 3px; }
+
+/* --------------------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------------------- */
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  padding: .8em; }
+  footer .copy {
+    font-size: .75em;
+    font-weight: 200; }
