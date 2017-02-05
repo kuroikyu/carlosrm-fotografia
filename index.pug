@@ -25,6 +25,7 @@ html(lang="en")
   body
     .image
     .alt-image
+    //- img.photo(src="assets/img/photo/_SMG0261.jpg", alt="")
     .container
       h1
         span.primary CARLOSRM
@@ -32,15 +33,20 @@ html(lang="en")
 
       main
         ul.social
-          li: i.fa.fa-instagram
-          li: i.fa.fa-500px
-          li: i.fa.fa-facebook
+          li: a.link(href="http://instagram.com/_u/carlosrmfotografia/", target="_blank")
+            i.fa.fa-instagram
+          li: a.link(href="https://500px.com/carlosrmfotografia", target="_blank")
+            i.fa.fa-500px
+          li: a.link(href="https://www.facebook.com/carlosrmfotografia/", target="_blank")
+            i.fa.fa-facebook
       .button
-        a(href="mailto:contact@carlosrmfotografia.com", target="_top") contact@carlosrmfotografia.com
+        a.link(href="mailto:contact@carlosrmfotografia.com", target="_top") contact@carlosrmfotografia.com
 
     footer
-      span.copy &copy; 2017 KUROI KYU
+      span.copy &copy; 2017
+        a.link(href="http://kuroikyu.com", target="_blank") KUROI KYU
 
     // script.js link
-    script(type="application/javascript", src="https://code.jquery.com/jquery-3.1.1.min.js")
-    script(type="application/javascript", src="assets/js/script.js")
+    //- script(type="application/javascript", src="https://code.jquery.com/jquery-3.1.1.min.js")
+    //- script(type="application/javascript", src="assets/js/script.js")
+    script(type="application/javascript", src="assets/js/backgroundSwitcher.js")

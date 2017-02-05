@@ -26,26 +26,37 @@ body
   background-color: $background
   color: $text
   font-family: $font
+
+  .photo
+    // max-height: 100%
+    // max-width: 100%
+    // height: auto
+    height: 100%
+    width: 100%
+    object-fit: cover
+    object-position: center
+
   .image, .alt-image
     position: absolute
     top: 0
     left: 0
     width: 100%
     height: 100%
-    background-image: url('../img/photo/_SMG0261.jpg')
+    // background-image: url('../img/photo/_SMG0261.jpg')
     background-size: cover
     background-position: center
     background-repeat: no-repeat
     background-attachment: fixed
     z-index: -1
-    // opacity: 0
     opacity: .7
-    transition: opacity 300ms ease-in-out
+    opacity: 0
+    transition: opacity 600ms ease-in-out
+    // transition: background-image 600ms ease-in-out
 
   .alt-image
     // opacity: .7
-    opacity: .7
-    background-image: url('../img/photo/_SMG8443.jpg')
+    opacity: 0
+    // background-image: url('../img/photo/_SMG8443.jpg')
   // background-image: url('../img/photo/_SMG0261.jpg')
   // background-size: cover
   // background-position: center
@@ -78,16 +89,19 @@ body
     font-size: 14px
   @media screen and (max-width: 500px)
     font-size: 12px
+
+
+  // @media screen and (max-height: 700px)
+    font-size: 14px
+
+  @media screen and (max-height: 500px)
+    font-size: 12px
+  @media screen and (max-height: 400px)
+    font-size: 10px
   @media screen and (max-width: 400px)
     font-size: 10px
   @media screen and (max-width: 350px)
     font-size: 8px
-  // @media screen and (max-height: 700px)
-    font-size: 14px
-  // @media screen and (max-height: 500px)
-  //   font-size: 12px
-  // @media screen and (max-height: 400px)
-  //   font-size: 10px
   @media screen and (max-height: 350px)
     font-size: 8px
 
@@ -114,3 +128,7 @@ body
 
 h1, main, .button
   width: 100%
+
+.link
+  text-decoration: none
+  color: $text

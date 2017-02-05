@@ -31,29 +31,39 @@ body {
   background-color: #111;
   color: #fff;
   font-family: "Dosis", sans-serif; }
+  body .photo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center; }
   body .image, body .alt-image {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../img/photo/_SMG0261.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     z-index: -1;
     opacity: .7;
-    transition: opacity 300ms ease-in-out; }
+    opacity: 0;
+    transition: opacity 600ms ease-in-out; }
   body .alt-image {
-    opacity: .7;
-    background-image: url("../img/photo/_SMG8443.jpg"); }
+    opacity: 0; }
   @media screen and (max-width: 700px) {
     body {
       font-size: 14px; } }
   @media screen and (max-width: 500px) {
     body {
       font-size: 12px; } }
+  @media screen and (max-height: 500px) {
+    body {
+      font-size: 12px; } }
+  @media screen and (max-height: 400px) {
+    body {
+      font-size: 10px; } }
   @media screen and (max-width: 400px) {
     body {
       font-size: 10px; } }
@@ -97,6 +107,10 @@ body {
 h1, main, .button {
   width: 100%; }
 
+.link {
+  text-decoration: none;
+  color: #fff; }
+
 /* --------------------------------------------------------------------------
    Header
    -------------------------------------------------------------------------- */
@@ -130,6 +144,10 @@ h1 {
   padding: 0; }
   .social li {
     width: 100%; }
+    .social li a {
+      transition: text-shadow 250ms ease-in-out; }
+      .social li a:hover {
+        text-shadow: 0 0 0.5em rgba(255, 255, 255, 0.75); }
 
 /* --------------------------------------------------------------------------
    Button
@@ -156,3 +174,5 @@ footer {
   footer .copy {
     font-size: .75em;
     font-weight: 200; }
+    footer .copy a:hover {
+      text-decoration: underline; }

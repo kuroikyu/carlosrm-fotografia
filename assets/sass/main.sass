@@ -16,3 +16,7 @@
 
   li
     width: 100%
+    a
+      transition: text-shadow 250ms ease-in-out
+      &:hover
+        text-shadow: 0 0 .5em transparentize($text, .25)
