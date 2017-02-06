@@ -145,7 +145,7 @@ h1 {
   .social li {
     width: 100%; }
     .social li a {
-      transition: text-shadow 250ms ease-in-out; }
+      transition: text-shadow 300ms ease-in-out; }
       .social li a:hover {
         text-shadow: 0 0 0.5em rgba(255, 255, 255, 0.75); }
 
