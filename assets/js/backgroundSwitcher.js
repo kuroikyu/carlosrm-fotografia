@@ -157,7 +157,7 @@ let options = {
     '_SMG9606.jpg' ]
 ,
   transitionDuration: 600, // in ms
-  timeBetweenBackgrounds: 7500,
+  timeBetweenBackgrounds: 5000,
 } // in ms
 
 backgroundSwitcher.init(options)
