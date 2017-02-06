@@ -172,7 +172,10 @@ footer {
   transform: translateX(-50%);
   padding: .8em; }
   footer .copy {
-    font-size: .75em;
+    font-size: .85em;
     font-weight: 200; }
-    footer .copy a:hover {
-      text-decoration: underline; }
+    footer .copy a {
+      border-bottom: 1px solid transparent;
+      transition: border 350ms ease-in-out; }
+      footer .copy a:hover {
+        border-color: #fff; }
