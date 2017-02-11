@@ -47,7 +47,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     z-index: -1;
-    opacity: .7;
     opacity: 0;
     transition: opacity 600ms ease-in-out; }
   @media screen and (max-width: 700px) {
