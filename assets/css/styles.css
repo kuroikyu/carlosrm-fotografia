@@ -149,6 +149,8 @@ h1 {
       transition: text-shadow 300ms ease-in-out; }
       .social li a:hover {
         text-shadow: 0 0 0.5em rgba(255, 255, 255, 0.75); }
+      .social li a img {
+        width: .8em; }
       .social li a span {
         margin-top: .25rem;
         display: block;
