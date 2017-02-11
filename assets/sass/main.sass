@@ -16,7 +16,23 @@
 
   li
     width: 100%
+    backface-visibility: hidden
+    // transform: translateZ(0)
+    // filter: blur(0px)
+    // transform: translateZ(0) scale(1.0, 1.0)
+    // transform: perspective(1px) translate3d(0,0,0)
+    // transform: translate3d(0,0,0)
+    transition: opacity 600ms linear
     a
       transition: text-shadow 300ms ease-in-out
       &:hover
         text-shadow: 0 0 .5em transparentize($text, .25)
+      span
+        margin-top: .25rem
+        display: block
+        font-size: .8rem
+ul
+  &:hover li
+    opacity: .35
+  li:hover
+    opacity: 1
