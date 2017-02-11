@@ -1,3 +1,7 @@
+- var title = "CARLOSRM | Fotografia"
+- var description = "-"
+- var author = "Kuroi Kyu"
+- var image = "http://carlos.kuroikyu.com/landing.jpg"
 doctype html
 html(lang="en")
   head
@@ -14,11 +18,29 @@ html(lang="en")
     // Responsive meta tag
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
 
+    // icons
     link(rel="apple-touch-icon", sizes="180x180", href="/apple-touch-icon.png")
     link(rel="icon", type="image/png", href="/favicon-32x32.png", sizes="32x32")
     link(rel="icon", type="image/png", href="/favicon-16x16.png", sizes="16x16")
     link(rel="manifest", href="/manifest.json")
     link(rel="mask-icon", href="/safari-pinned-tab.svg", color="#111111")
+
+    // Facebook's share tags
+    //- meta(property="fb:app_id" content="")
+    meta(property="og:url" content="http://carlos.kuroikyu.com/")
+    meta(property="og:title" content=title)
+    meta(property="og:type" content="website")
+    meta(property="og:description" content=description)
+    meta(property="og:image" content=image)
+    meta(property="og:site_name" content="Wendigo Tattoo")
+
+    // Twitter share tags
+    meta(name="twitter:card" content="summary_large_image")
+    meta(name="twitter:content" content="@carlosrmfotografia")
+    meta(name="twitter:creator" content="@kuroikyu")
+    meta(name="twitter:title" content=title)
+    meta(name="twitter:description" content=description)
+    meta(name="twitter:image" content=image)
 
     // Normalize HTML5 Reset
     link(rel="stylesheet" href="node_modules/normalize.css/normalize.css")
@@ -32,8 +54,6 @@ html(lang="en")
 
   body
     .image
-    //- .alt-image
-    //- img.photo(src="assets/img/photo/_SMG0261.jpg", alt="")
     .container
       h1
         span.primary CARLOSRM
