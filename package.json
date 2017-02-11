@@ -6,7 +6,6 @@
   "author": "Kuroi Kyu <kuroikyu@users.noreply.github.com>",
   "license": "Apache-2.0",
   "dependencies": {
-    "font-awesome": "^4.7.0",
     "normalize.css": "^5.0.0"
   },
   "devDependencies": {
