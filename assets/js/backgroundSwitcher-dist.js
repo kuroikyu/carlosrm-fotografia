@@ -7,6 +7,7 @@ var backgroundSwitcher = {
   imageList: [],
   transitionDuration: 0,
   timeBetweenBackgrounds: 5000,
+  maxImages: 5,
   deviceSize: {},
 
   init: function init(options) {
@@ -16,9 +17,11 @@ var backgroundSwitcher = {
     this.imageList = options.imageList;
     this.transitionDuration = options.transitionDuration;
     this.timeBetweenBackgrounds = options.timeBetweenBackgrounds;
+    this.maxImages = options.maxImages;
 
     this.getDeviceSize();
     this.randomizeImages();
+    this.shortenImageList();
     this.chooseImageQuality();
     this.loadAndDisplayImage();
   },
@@ -50,6 +53,9 @@ var backgroundSwitcher = {
     this.imageList.sort(function () {
       return 0.5 - Math.random();
     });
+  },
+  shortenImageList: function shortenImageList() {
+    this.imageList = this.imageList.slice(0, this.maxImages);
   },
   chooseImageQuality: function chooseImageQuality() {
     var _this = this;
@@ -118,7 +124,8 @@ var options = {
   imageList: ['42780011.jpg', 'errwe4-6335.jpg', 'errwe4-6364.jpg', 'paraguas.jpg', 'sin título-6429.jpg', 'sin título-8142.jpg', '_SMG0261.jpg', '_SMG0642.jpg', '_SMG0817.jpg', '_SMG0898.jpg', '_SMG1076.jpg', '_SMG1213.jpg', '_SMG1653.jpg', '_SMG2603.jpg', '_SMG2966.jpg', '_SMG2976.jpg', '_SMG3018.jpg', '_SMG3167.jpg', '_SMG3525.jpg', '_SMG3558.jpg', '_SMG3589.jpg', '_SMG3608.jpg', '_SMG3624.jpg', '_SMG3693.jpg', '_SMG3777.jpg', '_SMG3863.jpg', '_SMG3867.jpg', '_SMG3875.jpg', '_SMG3919.jpg', '_SMG3934.jpg', '_SMG8256.jpg', '_SMG8443.jpg', '_SMG9033.jpg', '_SMG9270.jpg', '_SMG9367.jpg', '_SMG9606.jpg'],
 
   transitionDuration: 600, // in ms
-  timeBetweenBackgrounds: 5000
-}; // in ms
+  timeBetweenBackgrounds: 5000, // in ms
+  maxImages: 10
+};
 
 backgroundSwitcher.init(options);

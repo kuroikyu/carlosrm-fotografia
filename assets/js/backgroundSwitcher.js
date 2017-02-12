@@ -7,7 +7,9 @@ const backgroundSwitcher = {
   imageList: [],
   transitionDuration: 0,
   timeBetweenBackgrounds: 5000,
+  maxImages: 5,
   deviceSize: {},
+
 
   init(options) {
     this.target = document.getElementsByClassName(options.target)[0] || document.getElementsByClassName('background-switcher')[0]
@@ -16,9 +18,11 @@ const backgroundSwitcher = {
     this.imageList = options.imageList
     this.transitionDuration = options.transitionDuration
     this.timeBetweenBackgrounds = options.timeBetweenBackgrounds
+    this.maxImages = options.maxImages
 
     this.getDeviceSize()
     this.randomizeImages()
+    this.shortenImageList()
     this.chooseImageQuality()
     this.loadAndDisplayImage()
   },
@@ -52,6 +56,10 @@ const backgroundSwitcher = {
     this.imageList.sort(function () {
       return 0.5 - Math.random()
     })
+  },
+
+  shortenImageList() {
+    this.imageList = this.imageList.slice(0, this.maxImages)
   },
 
   chooseImageQuality() {
@@ -157,7 +165,8 @@ let options = {
     '_SMG9606.jpg' ]
 ,
   transitionDuration: 600, // in ms
-  timeBetweenBackgrounds: 5000,
-} // in ms
+  timeBetweenBackgrounds: 5000, // in ms
+  maxImages: 10,
+}
 
 backgroundSwitcher.init(options)
