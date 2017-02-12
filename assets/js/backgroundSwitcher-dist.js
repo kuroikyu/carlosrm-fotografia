@@ -1,5 +1,8 @@
 'use strict';
 
+var curatedImagesArray = ['0_1486911736934.jpg', '1_1486911736934.jpg', '2_1486911736934.jpg', '3_1486911736934.jpg', '4_1486911736934.jpg', '5_1486911736934.jpg', '6_1486911736934.jpg', '7_1486911736934.jpg', '8_1486911736934.jpg', '9_1486911736934.jpg', '10_1486911736934.jpg', '11_1486911736934.jpg', '12_1486911736934.jpg', '13_1486911736934.jpg', '14_1486911736934.jpg', '15_1486911736934.jpg', '16_1486911736934.jpg', '17_1486911736934.jpg', '18_1486911736934.jpg', '19_1486911736934.jpg', '20_1486911736934.jpg', '21_1486911736934.jpg', '22_1486911736934.jpg', '23_1486911736934.jpg', '24_1486911736934.jpg', '25_1486911736934.jpg', '26_1486911736934.jpg', '27_1486911736934.jpg', '28_1486911736934.jpg', '29_1486911736934.jpg', '30_1486911736934.jpg', '31_1486911736934.jpg', '32_1486911736934.jpg', '33_1486911736934.jpg'];
+//@prepros-prepend curatedImagesArray.js
+
 var backgroundSwitcher = {
   target: '',
   folderStructure: [],
@@ -121,8 +124,7 @@ var options = {
     width: 2100,
     height: 1300
   }],
-  imageList: ['42780011.jpg', 'errwe4-6335.jpg', 'errwe4-6364.jpg', 'paraguas.jpg', 'sin título-6429.jpg', 'sin título-8142.jpg', '_SMG0261.jpg', '_SMG0642.jpg', '_SMG0817.jpg', '_SMG0898.jpg', '_SMG1076.jpg', '_SMG1213.jpg', '_SMG1653.jpg', '_SMG2603.jpg', '_SMG2966.jpg', '_SMG2976.jpg', '_SMG3018.jpg', '_SMG3167.jpg', '_SMG3525.jpg', '_SMG3558.jpg', '_SMG3589.jpg', '_SMG3608.jpg', '_SMG3624.jpg', '_SMG3693.jpg', '_SMG3777.jpg', '_SMG3863.jpg', '_SMG3867.jpg', '_SMG3875.jpg', '_SMG3919.jpg', '_SMG3934.jpg', '_SMG8256.jpg', '_SMG8443.jpg', '_SMG9033.jpg', '_SMG9270.jpg', '_SMG9367.jpg', '_SMG9606.jpg'],
-
+  imageList: curatedImagesArray,
   transitionDuration: 600, // in ms
   timeBetweenBackgrounds: 5000, // in ms
   maxImages: 10
