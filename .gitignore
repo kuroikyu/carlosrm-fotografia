@@ -50,9 +50,9 @@ Temporary Items
 prepros-6.config
 
 # Project specifics
-assets/original/*
-assets/photo/*
-assets/other/*
+/assets/original/*
+/assets/photo/*
+/assets/other/*
 
 # =========================
 # Node
